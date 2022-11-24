@@ -1,0 +1,40 @@
+.sidebarDiv {
+  display: inline-flex;
+  flex-direction: column;
+  width: 150px;
+  height: 100vh;
+  background-color: #7d6e83;
+}
+
+.sidebarDiv ul {
+  margin: 0;
+  list-style: none;
+}
+.sidebarDiv li {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.sidebarDiv a {
+  display: inline-flex;
+  align-items: center;
+  color: #d0b8a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+.sidebarDiv h3 {
+  display: inline-flex;
+  margin-left: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .sidebarDiv {
+    background-color: brown;
+    width: 75px;
+  }
+  .sidebarDiv h3 {
+    display: none;
+  }
+  .routeDiv {
+    width: calc(100% - 75px);
+  }
+}
